@@ -58,7 +58,7 @@ header{
   border-bottom: 1px solid var(--secondary);
 }
 
-.nav_links button{
+.nav_links button,.prod_desc button{
   padding:0.5rem 1.7rem;
   background: var(--secondary);
   color: var(--primary);
@@ -71,7 +71,7 @@ header{
   transform: translateY(0);
 }
 
-.hero,.about{
+.hero,.about,.products{
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -82,7 +82,7 @@ header{
   color: var(--secondary);
   min-height: calc(100vh - 100px);
 }
-.hero_desc,.about_desc{
+.hero_desc,.about_desc,.prod_desc{
   margin:0 3.5rem;
 }
 .hero_desc h1{
@@ -96,14 +96,14 @@ header{
 .hero_img img,.about_img img{
   width:100%;
 }
-.about{
+.about,.products{
   background-color: var(--secondary);
   min-height: 100vh;
   text-align: left;
   font-weight: bold;
   margin: 0 auto;
 }
-.about_title{
+.about_title,.prod_title{
   margin-bottom: 10px;
   color:var(--primary);
   border:1px solid var(--primary);
@@ -111,12 +111,12 @@ header{
   padding: 0.25rem 2rem;
   border-radius: 20px;
 }
-.about_desc h2{
+.about_desc h2,.prod_desc h2{
   margin:1rem 0;
   color:var(--pri-ft);
 }
 
-.about_desc p{
+.about_desc p,.prod_desc p{
   color: var(--sec-ft);
   font-size: 15px;
 }
@@ -133,7 +133,31 @@ header{
   padding:0.5rem 1rem;
 }
 
-@media (max-width : 768px) {
+.prod_desc ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin:1rem 0;
+}
+.prod_desc ul li{
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: 2px groove var(--primary);
+  padding:0.5rem 2rem;
+  margin: 0.25rem 0;
+  border-radius: 1rem;
+}
+.prod_desc ul li:first-child{
+  margin-left: 0;
+}
+
+.prod_desc button{
+  background: var(--primary);
+  color: var(--secondary);
+  font-size: 1rem;
+}
+@media (max-width : 800px) {
   .nav_links{
     position: absolute;
     top:0;
@@ -157,13 +181,16 @@ header{
   .about{
     flex-direction: column-reverse;
   }
-  .about_desc{
+  .products{
+    flex-direction: column;
+  }
+  .about_desc,.prod_desc{
     margin: 6rem 2rem 2rem 2rem;
   }
-  .hero_desc,.about_title{
+  .hero_desc,.about_title,.prod_title{
     text-align: center;
   }
-  .about_title{
+  .about_title,.prod_title{
     margin: 0 auto;
   }
 }

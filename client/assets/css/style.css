@@ -71,7 +71,7 @@ header{
   transform: translateY(0);
 }
 
-.hero,.about,.products{
+.hero,.about,.products,.features{
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -82,7 +82,7 @@ header{
   color: var(--secondary);
   min-height: calc(100vh - 100px);
 }
-.hero_desc,.about_desc,.prod_desc{
+.hero_desc,.about_desc,.prod_desc,.feat_desc{
   margin:0 3.5rem;
 }
 .hero_desc h1{
@@ -90,20 +90,20 @@ header{
   margin-bottom: 10px;
   line-height: 2.5rem;
 }
-.hero_img,.about_img{
+.hero_img,.about_img,.prod_img,.feat_img{
   min-width:45%;
 }
-.hero_img img,.about_img img{
+.hero_img img,.about_img img,.feat_img img{
   width:100%;
 }
-.about,.products{
+.about,.products,.features{
   background-color: var(--secondary);
   min-height: 100vh;
   text-align: left;
   font-weight: bold;
   margin: 0 auto;
 }
-.about_title,.prod_title{
+.about_title,.prod_title,.feat_title{
   margin-bottom: 10px;
   color:var(--primary);
   border:1px solid var(--primary);
@@ -111,7 +111,7 @@ header{
   padding: 0.25rem 2rem;
   border-radius: 20px;
 }
-.about_desc h2,.prod_desc h2{
+.about_desc h2,.prod_desc h2,.feat_desc h2{
   margin:1rem 0;
   color:var(--pri-ft);
 }
@@ -137,26 +137,118 @@ header{
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  justify-content: space-evenly;
   margin:1rem 0;
 }
-.prod_desc ul li{
+.product{
   color: var(--primary);
   background-color: var(--secondary);
   border: 2px groove var(--primary);
   padding:0.5rem 2rem;
   margin: 0.25rem 0;
+  margin-right: 1rem;
   border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
 }
-.prod_desc ul li:first-child{
-  margin-left: 0;
+.product:hover{
+  background-color: var(--primary);
+  color: var(--secondary);
 }
-
 .prod_desc button{
   background: var(--primary);
   color: var(--secondary);
   font-size: 1rem;
 }
+.cards_container{
+  display: flex;
+  flex-wrap: wrap;  
+  width:100%;
+}
+.card{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  flex: 2 1 1;
+  border: 2px solid var(--primary);
+  border-radius: 2rem;
+  padding-right: 1rem;
+  margin: 1rem 0;
+  margin-right: 1rem;
+}
+.card i{
+  padding:0.7rem;
+  margin-right: 0.5rem;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+.footer{
+  background-color: var(--pri-ft);
+  color: var(--secondary);
+  padding-top: 2rem;
+}
+.footer_container{
+  display: flex;
+  justify-content: space-evenly;
+  margin:1rem 0;
+}
+.footer_container h3{
+  font-weight: bolder;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.phone,.email{
+  margin:1rem 0;
+}
+.phone i,.email i,.address i{
+  margin-right : 1rem;
+}
+.social_container i{
+  padding:0.7rem;
+  border:0.25px solid var(--sec-ft);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  margin:0 0.2rem;
+  transition: all 0.25s ease-in-out;
+}
+.social_container i:hover{
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.social_container i:first-child{
+  margin-left: 0;
+}
+.menu_link{
+  list-style: none;
+  padding:0.25rem 0;
+}
+.menu_link i{
+  margin-right: 1rem;
+}
+.menu_link a{
+  text-decoration: none;
+  color: var(--secondary);
+}
+.location{
+  border: 1px solid var(--sec-ft);
+  padding:1rem;
+  margin:1rem 0;
+  border-radius: 1rem;
+  width: 20rem;
+}
+.address{
+  display: flex;  
+  align-items: center;
+}
+.copyright{
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+  border-top: 1px solid var(--sec-ft);
+  padding: 1rem 0;
+}
+
 @media (max-width : 800px) {
   .nav_links{
     position: absolute;
@@ -178,19 +270,29 @@ header{
     justify-content: center;
     padding:3rem 0;
   }
-  .about{
+  .about,.features{
     flex-direction: column-reverse;
   }
   .products{
     flex-direction: column;
   }
-  .about_desc,.prod_desc{
+  .about_desc,.prod_desc,.feat_desc,.footer_container{
     margin: 6rem 2rem 2rem 2rem;
   }
-  .hero_desc,.about_title,.prod_title{
+  .hero_desc,.about_title,.prod_title,.feat_title{
     text-align: center;
   }
-  .about_title,.prod_title{
+  .about_title,.prod_title,.feat_title{
     margin: 0 auto;
+  }
+  .prod_desc ul,.cards_container{
+    justify-content: center;
+  }
+  .card:last-child{
+    margin-bottom: 0;
+  }
+  .footer_container{
+    margin-top: 3rem;
+    flex-direction: column;
   }
 }

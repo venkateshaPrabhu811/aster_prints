@@ -5,11 +5,15 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root{
     --primary : #00b98e;
     --secondary:#FFFFFF;
     --pri-ft:#0E2E50;
     --sec-ft : #666565;
+    --shadow:#e6e7e2;
 }
 header{
   position: relative;
@@ -74,7 +78,7 @@ header{
 .hero,.about,.products,.features{
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .hero{
@@ -103,15 +107,15 @@ header{
   font-weight: bold;
   margin: 0 auto;
 }
-.about_title,.prod_title,.feat_title{
+.about_title,.prod_title,.feat_title,.teams_title{
   margin-bottom: 10px;
   color:var(--primary);
   border:1px solid var(--primary);
   width: fit-content;
   padding: 0.25rem 2rem;
   border-radius: 20px;
-}
-.about_desc h2,.prod_desc h2,.feat_desc h2{
+} 
+.about_desc h2,.prod_desc h2,.feat_desc h2,.teams h2{
   margin:1rem 0;
   color:var(--pri-ft);
 }
@@ -249,6 +253,67 @@ header{
   padding: 1rem 0;
 }
 
+.teams{
+  min-height: 100vh;
+  text-align: center;
+}
+.teams_title{
+  margin: 0 auto;
+}
+.teams_container{
+  display: flex;
+  justify-content: center;
+  padding:1rem;
+}
+.member{
+  position:relative;
+  width:20%;
+  height:350px;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999;
+}
+.member_img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  padding:1rem;
+  width:70%;
+  transform: translate(-50%,-50%);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member_img img{
+  background-color: var(--shadow);
+  border-radius: 50%;
+  width:100%;
+  aspect-ratio: 1/1;
+}
+.member h3{
+  padding-top:3rem;
+}
+.member p{
+  padding-top: 5rem;
+}
+.member h3,.member p{
+  text-transform: uppercase;
+  transition:all 0.2s ease-in-out;
+  height:40%;
+  box-shadow: 0px 0px 10px 5px rgba(230,231,226,1);
+-webkit-box-shadow: 0px 0px 10px 5px rgba(230,231,226,1);
+-moz-box-shadow: 0px 0px 10px 5px rgba(230,231,226,1);
+border-radius: 0.5rem;
+}
+.member:hover > p,.member:hover > h3{
+  background-color: var(--primary);
+  color:var(--secondary);
+}
+
 @media (max-width : 800px) {
   .nav_links{
     position: absolute;
@@ -276,7 +341,7 @@ header{
   .products{
     flex-direction: column;
   }
-  .about_desc,.prod_desc,.feat_desc,.footer_container{
+  .about_desc,.prod_desc,.feat_desc,.footer_container,.teams{
     margin: 6rem 2rem 2rem 2rem;
   }
   .hero_desc,.about_title,.prod_title,.feat_title{
@@ -294,5 +359,18 @@ header{
   .footer_container{
     margin-top: 3rem;
     flex-direction: column;
+  }
+  .teams_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .member{
+    width:70%;
+  }
+  .member_img{
+    width:9rem;
+  }
+  .member_img img{
+    width: 100%;
   }
 }

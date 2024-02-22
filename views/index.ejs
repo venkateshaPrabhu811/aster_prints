@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/header') %>
+  <body>
+    <%- include('partials/nav') %>
+
+    <section class="hero">
+      <div class="hero_desc">
+        <h1>Your meal's journey, our responsibility.</h1>
+        <h3>
+          Crafting containers that preserve, protect, and present - because
+          every meal is a masterpiece
+        </h3>
+      </div>
+      <div class="hero_img">
+        <img src="/img/hero.png" alt="" />
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about_img">
+        <img src="/img/about_us.png" alt="" />
+      </div>
+      <div class="about_desc">
+        <h3 class="about_title">About Us</h3>
+        <h2>A Package of Quality and Perfection</h2>
+        <p>
+          Established in the year 2011, at Sivakasi, (Tamil Nadu, India), We are
+          Proprietorship Firm, engaged in manufacturing the best quality food
+          packaging boxes.
+        </p>
+        <div class="abt_features_container">
+          <i class="fa-solid fa-star"></i>
+          <div class="abt_feature">
+            <h4>Best Quality</h4>
+            <p>
+              Adopted a constant approach towards delivering quality products to
+              clients.
+            </p>
+          </div>
+        </div>
+        <div class="abt_features_container">
+          <i class="fa-solid fa-microchip"></i>
+          <div class="abt_feature">
+            <h4>Technological Expertise</h4>
+            <p>
+              Supported by highly advanced machinery and team of well
+              experienced members.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="prod_desc">
+        <h3 class="prod_title">Our Products</h3>
+        <h2>Quality meets creativity for an unforgettable impression</h2>
+        <p>
+          Experience the perfect blend of quality and creativity with our
+          bespoke packaging boxes, designed to leave a lasting impression.
+        </p>
+        <ul>
+          <li class="product">Boxes</li>
+          <li class="product">Trays</li>
+          <li class="product">Stickers</li>
+          <li class="product">Labels</li>
+        </ul>
+        <button class="prod_btn" onclick="window.location.href='/products'">
+          Explore
+        </button>
+      </div>
+      <div class="prod_img">
+        <img src="/img/products.png" alt="" />
+      </div>
+    </section>
+    <section class="features" id="features">
+      <div class="feat_img">
+        <img src="/img/features.png" alt="" />
+      </div>
+      <div class="feat_desc">
+        <h3 class="feat_title">Features</h3>
+        <h2>Discover our sustainable, convenient food packaging solutions.</h2>
+        <div class="cards_container">
+          <div class="card">
+            <i class="fa-solid fa-shapes"></i>
+            <p>Customizable Shapes</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-maximize"></i>
+            <p>Wide range of sizes</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-shield"></i>
+            <p>Durability</p>
+          </div>
+          <div class="card">
+            <i class="fa-regular fa-face-smile"></i>
+            <p>Attractive Design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="teams" id="teams">
+      <h3 class="teams_title">Our Team</h3>
+      <h2>Meet Our Team Members</h2>
+      <div class="teams_container">
+        <div class="member">
+          <h3>Full Name</h3>
+          <div class="member_img">
+            <img src="/img/user.png" alt="" />
+          </div>
+          <p>Owner</p>
+        </div>
+        <div class="member">
+          <h3>Full Name</h3>
+          <div class="member_img">
+            <img src="/img/user.png" alt="" />
+          </div>
+          <p>Owner</p>
+        </div>
+        <div class="member">
+          <h3>Full Name</h3>
+          <div class="member_img">
+            <img src="/img/user.png" alt="" />
+          </div>
+          <p>Owner</p>
+        </div>
+      </div>
+    </section>
+    <%- include('partials/footer') %>
+  </body>
+</html>

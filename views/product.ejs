@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/header') %>
+
+  <body>
+    <%- include('partials/nav') %>
+    <!-- slider -->
+    <h2 class="prod_title prod_page_title"><%= product.name %></h2>
+    <div class="prod_container">
+      <% if (product.models) { %>
+      <div class="models prod_box">
+        <h3>Models</h3>
+        <ul>
+          <% product.models.forEach(mod => { %>
+          <li><%= mod %></li>
+          <% }) %>
+        </ul>
+      </div>
+      <% } %> <% if (product.features) { %>
+      <div class="prod_features prod_box">
+        <h3>Features</h3>
+        <ul>
+          <% product.features.forEach(mod => { %>
+          <li><%= mod %></li>
+          <% }) %>
+        </ul>
+      </div>
+      <% } %>
+    </div>
+    <div class="tables">
+      <% if (product.tables) { %> <% product.tables.forEach(tab => { %> <%-
+      include('partials/prod_table',{tab}) %> <% }) %> <% } %>
+    </div>
+    <%- include('partials/footer') %>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+{
+  "pizza-box": {
+    "name": "Pizza Box",
+    "features": [
+      "Durable",
+      "Foldable style",
+      "Eco-friendly"
+    ],
+    "tables": [
+      {
+        "description": "Pizza boxes on duplex Board with corrugation",
+        "headers": ["Descriptions", "Size", "GSM", "Corrugations"],
+        "data": [
+          ["6-Inch", "6”6”1.75", "500", "3 PLY"],
+          ["7-Inch", "7”7”1.75", "500", "3 PLY"],
+          ["8-Inch", "8”8”1.75", "500", "3 PLY"],
+          ["9-Inch", "9”9”1.75", "500", "3 PLY"],
+          ["10-Inch", "10”10”1.75", "500", "3 PLY"],
+          ["11-Inch", "11”11”1.75", "500", "3 PLY"],
+          ["12-Inch", "12”12”1.75", "500", "3 PLY"],
+          ["13-Inch", "13”13”1.75", "500", "3 PLY"]
+        ]
+      },
+      {
+        "description": "Pizza boxes on duplex Board without corrugation",
+        "headers": ["Descriptions", "Size", "GSM", "Board"],
+        "data": [
+          ["7-Inch", "7”7”1.75", "300", "Duplex/Lamination"],
+          ["9-Inch", "9”9”1.75", "350", "Duplex/Lamination"],
+          ["12-Inch", "12”12”1.75", "400", "Duplex/Lamination"]
+        ]
+      },
+      {
+        "description": "Handle Type Pizza Box",
+        "headers": ["Descriptions", "Size", "GSM", "Board"],
+        "data": [["13-Inch", "13”13”1.75", "400", "Duplex/Lamination"]]
+      }
+    ]
+  },
+  "cake-box": {
+    "name": "Cake Box",
+    "features": [
+      "Lightweight",
+      "Attractive design",
+      "Safe to carry"
+    ],
+    "tables": [
+      {
+        "description": "Cake boxes on duplex Board",
+        "headers": ["Descriptions", "Size", "GSM"],
+        "data": [
+          ["1 Cake-Box", "2.75”4”3", "300"],
+          ["2 Cake-Box", "4”4”3", "300"],
+          ["2 Cake-Box", "4”4”3.5", "300"],
+          ["4 Cake-Box", "5”5”3", "300"],
+          ["4 Cake-Box", "5*5*3.5", "300"],
+          ["6 Cake-Box", "7*5*3", "350"],
+          ["6 Cake-Box", "7*5*3.5", "350"],
+          ["Half Kg Box", "7*5*3.5", "350"],
+          ["Half Kg Box", "7*5*4", "350"],
+          ["1 Kg Box", "9*9*3.5", "400"],
+          ["1 Kg Box", "9*9*4", "400"],
+          ["1 1/2 Kg Box", "10*10*4", "400"],
+          ["2 Kg Box", "12*12*4", "400"],
+          ["3 Kg Box", "15*15*4", "450"]
+        ]
+      },
+      {
+        "description": "Plain Cake Box",
+        "headers": ["Descriptions", "Size", "GSM", "Lamination"],
+        "data": [
+          ["2 Cake", "4\" X 4\" X 3\"", "300", "No"],
+          ["4 Cake", "4\" X 4\" X 3\"", "300", "No"],
+          ["6 Cake", "5\" X 5\" X 3\"", "320", "No"],
+          ["8 Cake", "7\" X 5\" X 3\"", "320", "No"],
+          ["1/2 Kg", "7\" X 7\" X 3.5\"", "350", "No"],
+          ["1 Kg", "9\" X 9\" X 4\"", "350", "No"],
+          ["1 1/2 Kg", "10\" X 10\" X 4\"", "400", "No"],
+          ["2 Kg", "12\" X 12\" X 4\"", "400", "No"],
+          ["3 Kg", "15\" X 15\" X 5\"", "400", "No"],
+          ["4 Cake", "4\" X 4\" X 3\"", "300", "No"],
+          ["6 Cake", "5\" X 5\" X 3\"", "320", "Yes"],
+          ["8 Cake", "7\" X 5\" X 3\"", "320", "Yes"]
+        ]
+      },
+      {
+        "description": "Window Cake Box",
+        "headers": ["Descriptions", "Size", "GSM"],
+        "data": [
+          ["Half Kg Box", "7*7*3.5", "350"],
+          ["Half Kg Box", "7*7*4", "350"],
+          ["1 Kg Box", "9*9*3.5", "400"],
+          ["1 Kg Box", "9*9*4", "400"],
+          ["1 1/2 Kg Box", "10*10*4", "400"],
+          ["2 Kg Box", "12*12*4", "400"],
+          ["3 Kg Box", "15*15*4", "450"]
+        ]
+      }
+    ]
+  },
+  "pastry-box": {
+    "name": "Pastry Box",
+    "features": [
+      "Lightweight",
+      "Attractive design",
+      "Safe to carry"
+    ],
+    "tables": [
+      {
+        "description": "Pastry boxes on duplex Board",
+        "headers": ["Descriptions", "Size", "GSM"],
+        "data": [
+          ["1 Cake-Box", "2.75”4”3", "300"],
+          ["2 Cake-Box", "4”4”4", "300"],
+          ["4 Cake-Box", "5”5”4", "300"],
+          ["6 Cake-Box", "7*5*4", "350"],
+          ["Half Kg Box", "8*8*4", "400"],
+          ["1 Kg Box", "10*10*5", "400"],
+          ["1 1/2 Kg Box", "11*11*5", "400"],
+          ["2 Kg Box", "12*12*5", "450"],
+          ["3 Kg Box", "15*15*5", "450"],
+          ["3 Kg Box", "13*16*5", "450"]
+        ]
+      }
+    ]
+  },
+  "cake-base-board": {
+    "name": "Cake Base Board",
+    "features": [
+      "Premium Finish",
+      "Made from metalized film laminated paperboard",
+      "Safe to carry"
+    ],
+    "tables": [
+      {
+        "description": "Cake Base Board",
+        "headers": ["Descriptions", "Size"],
+        "data": [
+          ["7-Inch", "6.75”6.75"],
+          ["8-Inch", "7.75”7.75"],
+          ["9-Inch", "8.75”8.75"],
+          ["10-Inch", "9.75”9.75"],
+          ["12-Inch", "11.75”11.75"],
+          ["15-Inch", "14.5”14.5"]
+        ]
+      }
+    ]
+  },
+  "sweet-boxes": {
+    "name": "Sweet Box",
+    "models": [
+      "Lock Model",
+      "Self Lock Model",
+      "Pasting Model",
+      "Double Piece Model"
+    ],
+    "features": [
+      "Attractive design",
+      "Foldable style",
+      "High Strength"
+    ],
+    "tables": [
+      {
+        "description": "Sweet Box",
+        "headers": ["Descriptions", "Size", "GSM"],
+        "data": [
+          ["250 GRAMS", "6”6”1.75", "350"],
+          ["500 GRAMS", "5”7”2.25", "400"],
+          ["1000 GRAMS", "8”6.25”2.5", "400"],
+          ["250 GRAMS", "5”4”2", "350"],
+          ["500 GRAMS", "5.5”7”2.25", "400"],
+          ["1000 GRAMS", "8.5”6”2.5", "400"]
+        ]
+      }
+    ]
+  },
+  "paper-plate": {
+    "name": "Paper Plate",
+    "features": [
+      "Disposable",
+      "Eco-Friendly",
+      "Color Coated",
+      "Birthday Themed (Cartoon Printed)"
+    ],
+    "tables": [
+      {
+        "description": "Paper Plate",
+        "headers": ["Descriptions", "Size"],
+        "data": [
+          ["6-Inch", "5.5”"],
+          ["7-Inch", "6.5”"],
+          ["8-Inch", "7.5”"]
+        ]
+      }
+    ]
+  },
+  "popcorn-box": {
+    "name": "Popcorn Box",
+    "features": [
+      "Fine finish",
+      "Creative appearance",
+      "Attractive design"
+    ],
+    "tables": [
+      {
+        "description": "Popcorn Box",
+        "headers": ["Descriptions", "Size", "GSM"],
+        "data": [
+          ["CONE", "8*3", "250"],
+          ["MINI", "3.25*5*2.25", "250"],
+          ["SMALL", "3.50*6.25*2.25", "250"],
+          ["SMALL(2)", "3.75*6.75*2.50", "250"],
+          ["MEDIUM", "3.75*7.75*2.50", "250"],
+          ["LARGE", "3.75*7*3.25", "300"],
+          ["X-LARGE", "4.50*9*2.50", "300"],
+          ["TUB-SQUARE", "8*5.25*3.75", "350"],
+          ["TUB-RECTANGLE", "7.75*5.50*4.25*3.25", "350"]
+        ]
+      }
+    ]
+  },
+  "sandwich-box": {
+    "name": "Sandwich Box",
+    "features": [
+      "Available in triangle as well as in pastry box style",
+      "For Single/ Double / Triple sandwich",
+      "With / Without window",
+      "With / Without lamination either side",
+      "Upto 4 colors"
+    ],
+    "tables": [
+      {
+        "description": "Sandwich Box",
+        "headers": ["Descriptions", "Size", "GSM"],
+        "data": [
+          ["SMALL", "5.25*7.25*2", "300"],
+          ["MEDIUM", "4.75*6.75*2.25", "300"],
+          ["MEDIUM", "5*6.75*2.75", "300"],
+          ["CLUB SANDWICH SMALL", "4*5.75*3.25", "300"],
+          ["CLUB SANDWICH BIG", "5.75*7.50*3.50", "300"],
+          ["BIG", "7*9*2", "300"]
+        ]
+      }
+    ]
+  },
+  "minicup-cake": {
+    "name": "Minicup Cake",
+    "features": [
+      "Boxes available with 1, 2, 4, 6, 12 inserts.",
+      "Offering protection and stability",
+      "White grade cardboard used"
+    ],
+    "tables": [
+      {
+        "description": "Minicup Cake Box",
+        "headers": ["Descriptions", "Size", "GSM"],
+        "data": [
+          ["1-CUPCAKE BOX", "2.75*2.75*2.75", "300"],
+          ["2-CUPCAKE BOX", "2.75*5.50*2.75", "300"],
+          ["3-CUPCAKE BOX", "8*3*3", "300"],
+          ["4-CUPCAKE BOX", "2.75*11*2.75", "300"],
+          ["6-CUPCAKE BOX", "8*5.50*3", "300"]
+        ]
+      },
+      {
+        "description": "Standard Cup Cake Box",
+        "headers": ["Descriptions", "Size", "GSM"],
+        "data": [
+          ["1-CUPCAKE BOX", "4*4*4", "320"],
+          ["2-CUPCAKE BOX", "7*4*4", "320"],
+          ["4-CUPCAKE BOX", "7*7*4", "350"],
+          ["6-CUPCAKE BOX", "10*6*4", "350"],
+          ["12-CUPCAKE BOX", "12*10*4", "400"]
+        ]
+      }
+    ]
+  },
+  "paper-tray": {
+    "name": "Paper Tray",
+    "features": [
+      "Disposable",
+      "Cost-effective",
+      "Eco-Friendly",
+      "Multi-purpose use"
+    ],
+    "tables": [
+      {
+        "description": "Paper Tray",
+        "headers": ["Descriptions", "Size(INCHES)", "GSM"],
+        "data": [
+          ["Paper Boat Tray", "3.5*3*1.5", "300"],
+          ["Paper Boat Tray", "4.5*2.75*1.5", "300"],
+          ["Paper Boat Tray", "4.5*3.25*1.75", "300"],
+          ["Paper Boat Tray", "7*3*1.75", "320"],
+          ["Paper Boat Tray", "8*3*2", "350"],
+          ["Paper Boat Tray", "13*3*1.5", "400"]
+        ]
+      }
+    ]
+  },
+  "burger-box": {
+    "name": "Burger Box",
+    "models": [
+      "Pastry Box Model - 8 corner pasting model / KFC Model",
+      "Handle Type Box"
+    ],
+    "features": [
+      "For big size burgers",
+      "With / without window",
+      "With / without lamination",
+      "Upto 4 colors"
+    ]
+  },
+  "chicken-box": {
+    "name": "Chicken Box",
+    "features": ["Superior finish", "Long lasting"],
+    "tables": [
+      {
+        "description": "Chicken Box",
+        "headers": ["Descriptions", "Size(HxLxB)", "Board"],
+        "data": [
+          ["Nuggets Box", "2.5x4.75x2.75", "Duplex 320 GSM"],
+          ["Strips Box", "2.25x5.75x3.5", "Duplex 320 GSM"],
+          ["Snacks Box", "3x7x4.25", "Duplex 320 GSM"],
+          ["Fried Chicken Box", "3x8.5x4.75", "Duplex 320 GSM"],
+          ["Popcorn Chicken Box", "3.5x2x2.5", "Duplex 320 GSM"]
+        ]
+      }
+    ]
+  },
+  "stickers-and-labels": {
+    "name": "Stickers & Labels",
+    "features": ["Biodegradable", "Fine finish", "Multicolor and single colors"]
+  },
+  "french-fries": {
+    "name": "French Fries",
+    "models": ["KFC Model", "Paper Cone Model", "French Fries Type"],
+    "features": ["Reasonable prices", "Fine quality"]
+  },
+  "food-paper-box": {
+    "name": "Food Paper Box",
+    "features": [
+      "Full overlap style top",
+      "Biodegradable and Compostable",
+      "Easier to lock",
+      "For serving Noodles, fried rice, Briyani, salad etc"
+    ]
+  },
+  "handle-type-cake-box": {
+    "name": "Handle Type Cake Box",
+    "features": [
+      "Easy handling & fine packing technique",
+      "Light weight",
+      "Attractive design",
+      "Safe to carry"
+    ]
+  },
+  "amenities-set": {
+    "name": "Amenities Set Boxes",
+    "models": [
+      "Soap Box",
+      "Shower Cap Box",
+      "Dental Kit Box",
+      "Shaving Kit Box",
+      "Bath Soap",
+      "Dental Kit",
+      "Shaving Kit",
+      "Disposable bag",
+      "Hygiene Bag",
+      "Loofah",
+      "Comb"
+    ]
+  },
+  "others": {
+    "name": "Other Packaging Boxes",
+    "models": [
+      "Agarbathi Boxes",
+      "Tea Packaging Take away box",
+      "Tea Box",
+      "Masala Boxes",
+      "Tissue Paper Boxes",
+      "3D Glass Box",
+      "Led Bulb Box",
+      "Corrugation Box"
+    ]
+  }
+}

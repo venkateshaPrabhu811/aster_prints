@@ -62,7 +62,7 @@ header{
   border-bottom: 1px solid var(--secondary);
 }
 
-.nav_links button,.prod_desc button{
+.nav_links button,.prod_btn{
   padding:0.5rem 1.7rem;
   background: var(--secondary);
   color: var(--primary);
@@ -110,7 +110,7 @@ header{
 .about_title,.prod_title,.feat_title,.teams_title{
   margin-bottom: 10px;
   color:var(--primary);
-  border:1px solid var(--primary);
+  border:2px solid var(--pri-ft);
   width: fit-content;
   padding: 0.25rem 2rem;
   border-radius: 20px;
@@ -157,10 +157,11 @@ header{
   background-color: var(--primary);
   color: var(--secondary);
 }
-.prod_desc button{
+.prod_btn{
   background: var(--primary);
   color: var(--secondary);
   font-size: 1rem;
+  display: block;
 }
 .cards_container{
   display: flex;
@@ -314,6 +315,83 @@ border-radius: 0.5rem;
   color:var(--secondary);
 }
 
+.products_container{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.prod_card{
+  max-width: 15rem;
+  border:3px solid var(--primary);
+  border-radius: 1rem;
+  margin:1rem 0.5rem;
+  padding:1rem 2rem;
+}
+.prod_card h3{
+  text-align: center;
+}
+.prod_card button{
+  margin: 0 auto;
+}
+.prod_card img{
+  width:100%;
+}
+
+.prod_page_title{
+  margin: 1.25rem auto;
+}
+
+.prod_page_desc{
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+  padding:0 2rem;
+}
+
+.prod_container{
+  display: flex;
+  justify-content: center;
+}
+
+.prod_box{
+  margin:1rem 2rem;
+  border:2px solid var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.prod_box h3{
+  color:var(--pri-ft);
+}
+
+.prod_table{
+  overflow-x: auto;
+}
+table{
+  margin: 2rem auto;
+}
+table caption{
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: bold;
+  margin:1rem 0;
+}
+table,th,td{
+  border:1px solid var(--pri-ft);
+  border-collapse: collapse;
+  text-align: center;
+  width: max-content;
+}
+
+th,td{
+  padding:0.25rem 0.5rem;
+}
+tr:nth-child(2n){
+  background-color: var(--shadow);
+}
+
 @media (max-width : 800px) {
   .nav_links{
     position: absolute;
@@ -350,6 +428,9 @@ border-radius: 0.5rem;
   .about_title,.prod_title,.feat_title{
     margin: 0 auto;
   }
+  .prod_page_title{
+    margin:2rem auto;
+  }
   .prod_desc ul,.cards_container{
     justify-content: center;
   }
@@ -365,12 +446,15 @@ border-radius: 0.5rem;
     align-items: center;
   }
   .member{
-    width:70%;
+    width:65%;
   }
   .member_img{
     width:9rem;
   }
   .member_img img{
     width: 100%;
+  }
+  .prod_container{
+    flex-direction: column;
   }
 }

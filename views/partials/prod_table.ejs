@@ -1,0 +1,23 @@
+<div class="prod_table">
+  <table>
+    <caption>
+      <%= tab.description %>
+    </caption>
+    <thead>
+      <tr>
+        <% tab.headers.forEach(ele => { %>
+        <th><%= ele %></th>
+        <% }) %>
+      </tr>
+    </thead>
+    <tbody>
+      <% tab.data.forEach(rowData => { %>
+      <tr>
+        <% rowData.forEach(val => { %>
+        <td><%= val %></td>
+        <% }) %>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>
